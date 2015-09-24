@@ -208,11 +208,7 @@ class book{
         echo $bigbookhtml;
     }
     
-    
-    public function set_book_id($nbook_id){
-        $this->book_id = $nbook_id;
-    }
-    
+        
     
 }
 
