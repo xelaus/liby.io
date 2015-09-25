@@ -113,7 +113,7 @@ class book{
                         <form action="book_update.php" >
                             
                     <div class="book_info_input">
-	                   			<input id="book_name_input" type="text" name="author" placeholder="Author" value="' . $this->author . '" maxlength="120"/>
+	                   			<input id="book_name_input" type="text" name="author" placeholder="Author" value="' . $this->author . '" maxlength="100"/>
 	                   		
                             <button type="submit" name="btn_update" value="author">
                             Update
@@ -135,7 +135,7 @@ class book{
                     <div class="book_info_edit">	                   	
                         <form action="book_update.php">   
                         <div class="book_info_input">
-	                   			<input id="book_name_input" type="text" name="genre" placeholder="Genre" value="' . $this->genre . '" maxlength="120"/>
+	                   			<input id="book_name_input" type="text" name="genre" placeholder="Genre" value="' . $this->genre . '" maxlength="40"/>
 	                   		
                             <button type="submit" name="btn_update" value="genre">
                             Update
@@ -158,7 +158,7 @@ class book{
                         <form action="book_update.php" >
                             
                     <div class="book_info_input">
-	                   			<input id="book_name_input" type="text" name="publisher" placeholder="Publisher" value="' . $this->publisher . '" maxlength="120"/>
+	                   			<input id="book_name_input" type="text" name="publisher" placeholder="Publisher" value="' . $this->publisher . '" maxlength="40"/>
 	                   		
                             <button type="submit" name="btn_update" value="publisher">
                             Update
@@ -182,7 +182,7 @@ class book{
                         <form action="book_update.php" >
                             
                     <div class="book_info_input">
-	                   			<input id="book_name_input" type="text" name="location" placeholder="Location" value="' . $this->location . '" maxlength="120"/>
+	                   			<input id="book_name_input" type="text" name="location" placeholder="Location" value="' . $this->location . '" maxlength="40"/>
 	                   		
                             <button type="submit" name="btn_update" value="location">
                             Update
@@ -208,7 +208,11 @@ class book{
         echo $bigbookhtml;
     }
     
-        
+    
+    public function set_book_id($nbook_id){
+        $this->book_id = $nbook_id;
+    }
+    
     
 }
 

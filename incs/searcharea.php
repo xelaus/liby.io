@@ -114,15 +114,15 @@ if (isset($submitbutton)){
 	                   		</div>
                                    
 	                   		<div>
-	                   			<input type="text" name="genre" placeholder="Genre" maxlength="30"/>
+	                   			<input type="text" name="genre" placeholder="Genre" maxlength="40"/>
 	                   		</div>
 	                   		
                             <div>
-	                   			<input type="text" name="publisher" placeholder="Publisher" maxlength="30"/>
+	                   			<input type="text" name="publisher" placeholder="Publisher" maxlength="40"/>
 	                   		</div>
                                    
 	                   		<div>
-	                   			<input type="text" name="location" placeholder="Location" maxlength="30"/>
+	                   			<input type="text" name="location" placeholder="Location" maxlength="40"/>
 	                   		</div>
                                    
 	                   		<div id="addsubmit">
