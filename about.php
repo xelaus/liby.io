@@ -14,12 +14,22 @@
     
     <style>
         
-        input{
-            text-transform: lowercase;
+        #firstsection{
+            width: 99%;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 40px;
+            
         }
         
-        #firstsection{
-            width: 90%;
+        #infolist {
+            width: 95%;
+            margin: 0 auto;
+        }
+        
+        #info{
+            text-align: center;
+            margin: none;
         }
         
         #leftheader a {
@@ -36,6 +46,7 @@
             background-color: #efb5a1;
             color: #627071;
             max-width: 420px;
+            margin-bottom: 40px;
         }
 
 
