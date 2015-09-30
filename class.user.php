@@ -91,8 +91,6 @@ class USER
         $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
         $mail->SMTPAuth = true; // authentication enabled
         $mail->SMTPSecure = 'ssl'; 
-        
-        //E-mail settings
         $mail->Host = "";
         $mail->Port = 465; // or 587
         $mail->Username = "";
@@ -335,7 +333,6 @@ table tr .padding .button {
         $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
         $mail->SMTPAuth = true; // authentication enabled
         $mail->SMTPSecure = 'ssl'; 
-        //E-mail settings    
         $mail->Host = "";
         $mail->Port = 465; // or 587
         $mail->IsHTML(true); 
@@ -582,7 +579,7 @@ table tr .padding .button {
        {
            $new_password = password_hash($upass, PASSWORD_DEFAULT);
    
-           $stmt = $this->db->prepare("UPDATE users SET user_pass=:new_password WHERE user_email=:umail AND forgot_hash=:uhash");
+           $stmt = $this->db->prepare("UPDATE users SET user_pass=:new_password, forgot_hash= NULL WHERE user_email=:umail AND forgot_hash=:uhash");
               
            $stmt->bindparam(":umail", $umail);
            $stmt->bindparam(":new_password", $new_password); 
@@ -594,8 +591,10 @@ table tr .padding .button {
        catch(PDOException $e)
        {
            echo $e->getMessage();
-       }    
+       }
+        
     }
+    
     
     public function addbook($user_id,$newbook){
        try {
