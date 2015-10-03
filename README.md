@@ -8,6 +8,9 @@ Simple library databese for your home library.
 - Lend books
 - Export your database to excel
 
+## Credits
+PHPMailer https://github.com/PHPMailer
+
 ## License
 The MIT License (MIT)
 
