@@ -9,7 +9,8 @@ Simple library databese for your home library.
 - Export your database to excel
 
 ## Credits
-PHPMailer https://github.com/PHPMailer
+- PHPMailer https://github.com/PHPMailer
+- Font Awesome https://github.com/FortAwesome/Font-Awesome
 
 ## License
 The MIT License (MIT)
