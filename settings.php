@@ -2,14 +2,17 @@
 include_once 'incs/dbconnect.php';
 
 $pagetitle = "Settings - Liby.io";
-?>
+include 'incs/header.php';
 
-<?php include 'incs/header.php' ;?>
+?>
 
 
 <div id="wrapper">
-    <?php include 'incs/searcharea.php' ;?>
-    <?php include 'incs/mainarea_settings.php' ;?>
+    <?php 
+        include 'incs/searcharea.php';
+        include 'incs/mainarea_settings.php';
+    ?>
 </div>
+
 <?php include 'incs/footer.php' ;?>
   
