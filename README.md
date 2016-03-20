@@ -11,11 +11,12 @@ Simple library databese for your home library.
 ## Credits
 - PHPMailer https://github.com/PHPMailer
 - Font Awesome https://github.com/FortAwesome/Font-Awesome
+- Necolas (normalize.css) https://github.com/necolas/
 
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2015
+Copyright (c) 2016
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
